@@ -1,4 +1,8 @@
 
+title > img {
+    width: 50px;
+}
+
 body {
     width: 100%;
     margin: 0;
