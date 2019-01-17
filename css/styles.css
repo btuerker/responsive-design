@@ -114,6 +114,7 @@ a {
         font-size: 20px;
     }
 
+
 /* HEADER */
 .header-content {
     display: grid;
@@ -135,6 +136,8 @@ a {
     rgba(0,130,170,0),
     black),
     url('../assets/girls-image.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .header-content > .main-link > a > span:first-child {
@@ -157,7 +160,12 @@ a {
     
 }
 
-.header-content > .main-link > a > span:nth-child(3){
+.header-content > .main-link > a > span:nth-child(3){ 
+    display:none;
+}
+
+
+.header-content > .main-link > a > span:nth-child(4){
     position: absolute;
     bottom: 10%;
     left: 5%;
@@ -183,11 +191,13 @@ a {
     rgba(0, 0, 0, 0),
     black),
     url('../assets/iphone-image.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .header-content > .second-link > a > span:first-child{
     position: absolute;
-    bottom: 50%;
+    bottom: 80%;
     left: 5%;
     text-decoration: none;
     color: white;
@@ -222,12 +232,14 @@ a {
     background: linear-gradient(
     rgba(0, 0, 0, 0),
     black),
-    url('../assets/car-image.jpg');
+    url('../assets/car-image.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .header-content > .third-link > a > span:first-child{
     position: absolute;
-    bottom: 50%;
+    bottom: 80%;
     left: 5%;
     text-decoration: none;
     color: white;
@@ -255,10 +267,10 @@ a {
     color:gray;
 }
 
-
-
-
 /* HEADER */
+
+
+
 @media screen and (max-width:1024px) {
     body::after {
         content: "768px and more";
@@ -306,4 +318,171 @@ a {
         content: "400px and more";
         background-color: seagreen;
     }
+
+    /* HEADER */
+    .header-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 250px 250px;
+        grid-gap: 10px;
+        width: 98%;
+        margin: 0 auto;
+        padding-top: 40px;
+
+    }
+
+    .header-content > .main-link {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        transition: background-color .4s ease;
+        position: relative;
+        grid-column: 1;
+        grid-row: 1;
+        background: linear-gradient(
+        rgba(228, 4, 190, 0.7),
+        rgba(0,130,170,0),
+        black),
+        url('../assets/girls-image.jpg');
+    }
+
+    .header-content > .main-link > a > span:first-child {
+        display: none;
+        
+    }
+
+    .header-content > .main-link > a > span:nth-child(2){
+        display:none;
+        
+    }
+
+    .header-content > .main-link > a > span:nth-child(3){
+        display: block;
+        position: absolute;
+        bottom: 45%;
+        left: 5%;
+        text-decoration: none;
+        color: white;
+        font-weight: normal;
+        font-size: 14px;
+    }
+    
+
+    .header-content > .main-link > a > span:nth-child(4){
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .header-content > .main-link > a > span:last-child{
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        text-decoration: none;
+        font-weight: lighter;
+        font-size: 14px;
+        color:gray;
+    }
+
+    .header-content > .second-link {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        transition: background-color .4s ease;
+        position: relative;
+        grid-column: 1;
+        grid-row: 2;
+        background: linear-gradient(
+        rgba(0, 0, 0, 0),
+        black),
+        url('../assets/iphone-image.jpeg');
+    }
+
+    .header-content > .second-link > a > span:first-child{
+        position: absolute;
+        position: absolute;
+        bottom: 45%;
+        left: 5%;
+        text-decoration: none;
+        color: white;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    .header-content > .second-link > a > span:nth-child(2){
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .header-content > .second-link > a > span:last-child{
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        text-decoration: none;
+        font-weight: lighter;
+        font-size: 14px;
+        color:gray;
+    }
+
+    .header-content > .third-link {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        transition: background-color .4s ease;
+        position: relative;
+        grid-column: 1;
+        grid-row: 3;
+        background: linear-gradient(
+        rgba(0, 0, 0, 0),
+        black),
+        url('../assets/car-image.png');
+    }
+
+    .header-content > .third-link > a > span:first-child{
+        position: absolute;
+        bottom: 45%;
+        left: 5%;
+        text-decoration: none;
+        color: white;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    .header-content > .third-link > a > span:nth-child(2){
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .header-content > .third-link > a > span:last-child{
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        text-decoration: none;
+        font-weight: lighter;
+        font-size: 14px;
+        color:gray;
+    }
+
+    /* HEADER */
+
 }
