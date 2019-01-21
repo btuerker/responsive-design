@@ -4,4 +4,4 @@
 
 by [Burhan](https://github.com/btuerker), [Andrei](https://github.com/andreimorosan29)
 
-[Live Preview](https://rawcdn.githack.com/btuerker/responsive-design/tree/master)
+[Live Preview](https://btuerker.github.io/responsive-design/)
